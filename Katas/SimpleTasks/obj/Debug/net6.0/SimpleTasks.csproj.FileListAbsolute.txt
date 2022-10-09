@@ -1,0 +1,15 @@
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\bin\Debug\net6.0\SimpleTasks.exe
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\bin\Debug\net6.0\SimpleTasks.deps.json
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\bin\Debug\net6.0\SimpleTasks.runtimeconfig.json
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\bin\Debug\net6.0\SimpleTasks.dll
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\bin\Debug\net6.0\SimpleTasks.pdb
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.csproj.AssemblyReference.cache
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.GeneratedMSBuildEditorConfig.editorconfig
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.AssemblyInfoInputs.cache
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.AssemblyInfo.cs
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.csproj.CoreCompileInputs.cache
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.dll
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\refint\SimpleTasks.dll
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.pdb
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\SimpleTasks.genruntimeconfig.cache
+D:\udemy\katas\csharp-katas\Katas\SimpleTasks\obj\Debug\net6.0\ref\SimpleTasks.dll
