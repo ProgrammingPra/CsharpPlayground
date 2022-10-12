@@ -40,7 +40,7 @@ namespace SimpleTasks
             Utils.Show(randomInts, "Rotating right", RotateRight(randomInts));
         }
        
-
+        
         internal static List<T> Sort<T>(List<T> list, Comparer<T>? comparer = null)
         {
             try
