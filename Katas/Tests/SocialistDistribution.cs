@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 namespace Tests
 {
-    public class Tests
+    public class SocialDistributionTests
     {
         [SetUp]
         public void Setup()

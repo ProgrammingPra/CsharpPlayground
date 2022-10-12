@@ -63,6 +63,75 @@
         }
       }
     },
+    "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj",
+        "projectName": "Basics",
+        "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj",
+        "packagesPath": "C:\\Users\\tatia\\.nuget\\packages\\",
+        "outputPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\udemy\\katas\\csharp-katas\\Katas\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -93,6 +162,9 @@
             "projectReferences": {
               "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj": {
                 "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj"
+              },
+              "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj": {
+                "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj"
               }
             }
           }

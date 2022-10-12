@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Katas\Katas.csproj" />
+    <ProjectReference Include="..\SimpleTasks\Basics.csproj" />
   </ItemGroup>
 
 </Project>
