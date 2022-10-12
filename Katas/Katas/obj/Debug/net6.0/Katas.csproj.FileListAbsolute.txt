@@ -1,0 +1,12 @@
+D:\udemy\katas\csharp-katas\Katas\Katas\bin\Debug\net6.0\Katas.deps.json
+D:\udemy\katas\csharp-katas\Katas\Katas\bin\Debug\net6.0\Katas.dll
+D:\udemy\katas\csharp-katas\Katas\Katas\bin\Debug\net6.0\Katas.pdb
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.csproj.AssemblyReference.cache
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.GeneratedMSBuildEditorConfig.editorconfig
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.AssemblyInfoInputs.cache
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.AssemblyInfo.cs
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.csproj.CoreCompileInputs.cache
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.dll
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\refint\Katas.dll
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\Katas.pdb
+D:\udemy\katas\csharp-katas\Katas\Katas\obj\Debug\net6.0\ref\Katas.dll
