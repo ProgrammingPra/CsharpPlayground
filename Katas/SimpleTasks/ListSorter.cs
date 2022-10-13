@@ -11,60 +11,22 @@ using static Basics.ListOf;
 
 namespace SimpleTasks
 {
-    //TODO
-    //1. reverse sort
-    //2. sort integers, strings, timestamps, CultureInfo accented strings
-    //3. sort objects
-    //4. sort with function, Comparer.Create
-    //5. sort with OrderBy
-    //6. sort arrays, diff lists
-    //7. sort by string length
-    //https://zetcode.com/csharp/sortlist/
-    internal class ListSorter : ILister
+    
+    public class ListSorter : ILister
     {
-
-        public void ShowWhatYouCan()
-        {
-            List<UncomparableObject> unsortableList = ListOf.Unsortables();
-            Utils.Show(unsortableList, "Sorting the unsortables", Sort(unsortableList));
-            Utils.Show(unsortableList, "Sorting the unsortables by name", Sort(unsortableList, item => item.Name, null));
-
-
-            var randomInts = ListOf.RandomInts();
-            Utils.Show(randomInts, "Sorting random integers", Sort(randomInts));
-
-            Utils.Show(randomInts, "Shuffling list of integers", Shuffle(randomInts));
-
-            Utils.Show(randomInts, "Rotating left", RotateLeft(randomInts));
-
-            Utils.Show(randomInts, "Rotating right", RotateRight(randomInts));
-        }
-       
         
-        internal static List<T> Sort<T>(List<T> list, Comparer<T>? comparer = null)
+        public static List<T> SortBySelf<T>(List<T> list, Comparer<T>? comparer = null)
         {
-            try
-            {
-                
-                return list.OrderBy(item => item, comparer).ToList();
-            }
-            catch (InvalidOperationException e)
-            {
-                Console.WriteLine("Your objects are not sortable. Sorry. Your list will remain unsorted");
-            }
-
-            return list;
+            return SortByAttribute(list, item => item, comparer);
         }
 
-        internal static List<T> Sort<T, TKey>(List<T> list, Func<T, TKey> selector,  Comparer<TKey>? comparer = null)
+        public static List<T> SortByAttribute<T, TKey>(List<T> list, Func<T, TKey> selector,  Comparer<TKey>? comparer = null)
         {
-
-            return list.OrderBy(selector, comparer).ToList();
+           return list.OrderBy(selector, comparer).ToList();
         }
 
-        private static List<T> RotateLeft<T>(List<T> list)
+        public static List<T> RotateLeft<T>(List<T> list)
         {
-            
             var queue = new Queue<T>(list);
 
             queue.Enqueue(queue.Dequeue());
@@ -75,14 +37,14 @@ namespace SimpleTasks
             return newList;
         }
 
-        private static List<T> RotateRight<T>(List<T> list)
+        public static List<T> RotateRight<T>(List<T> list)
         {
 
             return list.Select((item, index) => list[((index - 1) + list.Count) % list.Count]).ToList();
 
         }
 
-        private static List<T> Shuffle<T>(List<T> list)
+        public static List<T> Shuffle<T>(List<T> list)
         {
 
             Random random = new Random();
@@ -99,11 +61,13 @@ namespace SimpleTasks
         }
 
         //OPTION3 --> Sort
+        //will use Comparer<T>.Default with compareTo() from IComparable<T>
+        //comparer = Comparer<T>.Default;
         internal static List<T> SortInPlace<T>(List<T> list, Comparer<T>? comparer = null)
         {
 
             if (comparer == null)
-                SortDefault(list);
+                list.Sort(comparer);
             else
                 //in-place!
                 list.Sort(comparer);
@@ -112,22 +76,21 @@ namespace SimpleTasks
             return list;
         }
 
-
-        //will use Comparer<T>.Default with compareTo() from IComparable<T>
-        //comparer = Comparer<T>.Default;
-        private static List<T> SortDefault<T>(List<T> list)
+        public void ShowWhatYouCan()
         {
-            try
-            {
-                //in-place!
-                list.Sort();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Your objects are not sortable. Sorry. Your list will remain unsorted");
-            }
+            List<UncomparableObject> unsortableList = ListOf.Unsortables();
+            Utils.Show(unsortableList, "Sorting the unsortables", SortBySelf(unsortableList));
+            Utils.Show(unsortableList, "Sorting the unsortables by name", SortByAttribute(unsortableList, item => item.Name, null));
 
-            return list;
+
+            var randomInts = ListOf.RandomInts();
+            Utils.Show(randomInts, "Sorting random integers", SortBySelf(randomInts));
+
+            Utils.Show(randomInts, "Shuffling list of integers", Shuffle(randomInts));
+
+            Utils.Show(randomInts, "Rotating left", RotateLeft(randomInts));
+
+            Utils.Show(randomInts, "Rotating right", RotateRight(randomInts));
         }
 
     }

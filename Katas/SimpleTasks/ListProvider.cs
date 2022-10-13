@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
-    internal class ListOf
+    public class ListOf
     {
         private static string[] Bugs = new string[] { "reality101Failure", "Bloombug", "Hindenbug", "HiggsBugson", "hydraBug", "commonLawFeature", "Heisenbug", "MadGirlfriendBug", "LochNessMonsterBug" };
         private static string[] CodeFeatures = new string[] {"yodaConditions", "Ninja Comments", "JengaCode", "megamoth", "GodObject"};
         private static string[] Processes = new string[] { "DrugReport", "FearDriveDevelopment", "aDuck", "featuritis", "satisficing", "AssDrivenDevelopment", "ButtDebugging", "ChugReport", "ShrugReport", "SmugReport" };
         
 
-    internal static List<UncomparableObject> Unsortables()
+        public static List<UncomparableObject> Unsortables()
         {
             return new List<UncomparableObject>() { new UncomparableObject("Second"), new UncomparableObject("First") };
         }
 
-        internal static List<UncomparableObject> RandomObjects()
+        public static List<UncomparableObject> RandomObjects()
         {
             List<string> names = RandomStrings();
             List<UncomparableObject> objects = new List<UncomparableObject>();
@@ -36,7 +36,7 @@ namespace Basics
 
             return cloneables.OfType<ICloneable>().ToList();
         }
-        internal static List<ICloneable> RandomCloneables()
+        public static List<ICloneable> RandomCloneables()
         {
             
             List<UncomparableObject> objects = RandomObjects();
@@ -79,9 +79,9 @@ namespace Basics
 
         }
 
-        internal class UncomparableObject : ICloneable
+        public class UncomparableObject : ICloneable
         {
-            internal string Name;
+            public string Name { get; }
 
             internal UncomparableObject(string name)
             {
