@@ -1,0 +1,15 @@
+D:\C#\CsharpPlayground\Katas\TicTacToe\bin\Debug\net6.0\TicTacToe.exe
+D:\C#\CsharpPlayground\Katas\TicTacToe\bin\Debug\net6.0\TicTacToe.deps.json
+D:\C#\CsharpPlayground\Katas\TicTacToe\bin\Debug\net6.0\TicTacToe.runtimeconfig.json
+D:\C#\CsharpPlayground\Katas\TicTacToe\bin\Debug\net6.0\TicTacToe.dll
+D:\C#\CsharpPlayground\Katas\TicTacToe\bin\Debug\net6.0\ref\TicTacToe.dll
+D:\C#\CsharpPlayground\Katas\TicTacToe\bin\Debug\net6.0\TicTacToe.pdb
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.csproj.AssemblyReference.cache
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.AssemblyInfoInputs.cache
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.AssemblyInfo.cs
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.csproj.CoreCompileInputs.cache
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.dll
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\ref\TicTacToe.dll
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.pdb
+D:\C#\CsharpPlayground\Katas\TicTacToe\obj\Debug\net6.0\TicTacToe.genruntimeconfig.cache

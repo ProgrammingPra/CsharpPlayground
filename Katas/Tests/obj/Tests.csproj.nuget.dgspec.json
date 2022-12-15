@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\udemy\\katas\\csharp-katas\\Katas\\Tests\\Tests.csproj": {}
+    "D:\\C#\\CsharpPlayground\\Katas\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj": {
+    "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj",
+        "projectUniqueName": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj",
         "projectName": "Katas",
-        "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj",
-        "packagesPath": "C:\\Users\\tatia\\.nuget\\packages\\",
-        "outputPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\obj\\",
+        "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj",
+        "packagesPath": "C:\\Users\\nikolaevata\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\nikolaevata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\tmp\\tmp\\TestLicensingNet6\\TestingLicenseFramework472": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,8 +48,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,32 +57,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj": {
+    "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj",
+        "projectUniqueName": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj",
         "projectName": "Basics",
-        "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj",
-        "packagesPath": "C:\\Users\\tatia\\.nuget\\packages\\",
-        "outputPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\obj\\",
+        "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj",
+        "packagesPath": "C:\\Users\\nikolaevata\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\nikolaevata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\tmp\\tmp\\TestLicensingNet6\\TestingLicenseFramework472": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,8 +115,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -128,43 +124,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\udemy\\katas\\csharp-katas\\Katas\\Tests\\Tests.csproj": {
+    "D:\\C#\\CsharpPlayground\\Katas\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\udemy\\katas\\csharp-katas\\Katas\\Tests\\Tests.csproj",
+        "projectUniqueName": "D:\\C#\\CsharpPlayground\\Katas\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Tests\\Tests.csproj",
-        "packagesPath": "C:\\Users\\tatia\\.nuget\\packages\\",
-        "outputPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Tests\\obj\\",
+        "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\nikolaevata\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\CsharpPlayground\\Katas\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\nikolaevata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\tmp\\tmp\\TestLicensingNet6\\TestingLicenseFramework472": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj": {
-                "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj"
+              "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj": {
+                "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj"
               },
-              "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj": {
-                "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj"
+              "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj": {
+                "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj"
               }
             }
           }
@@ -206,8 +201,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -216,7 +210,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj": {}
+    "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj": {}
   },
   "projects": {
-    "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj": {
+    "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj",
+        "projectUniqueName": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj",
         "projectName": "Basics",
-        "projectPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\Basics.csproj",
-        "packagesPath": "C:\\Users\\tatia\\.nuget\\packages\\",
-        "outputPath": "D:\\udemy\\katas\\csharp-katas\\Katas\\SimpleTasks\\obj\\",
+        "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\Basics.csproj",
+        "packagesPath": "C:\\Users\\nikolaevata\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\CsharpPlayground\\Katas\\SimpleTasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\nikolaevata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\tmp\\tmp\\TestLicensingNet6\\TestingLicenseFramework472": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,8 +58,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
         }
       }
     }

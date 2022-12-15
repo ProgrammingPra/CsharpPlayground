@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj",
-      "projectName": "Katas",
-      "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj",
+      "projectUniqueName": "D:\\C#\\CsharpPlayground\\Katas\\TicTacToe\\TicTacToe.csproj",
+      "projectName": "TicTacToe",
+      "projectPath": "D:\\C#\\CsharpPlayground\\Katas\\TicTacToe\\TicTacToe.csproj",
       "packagesPath": "C:\\Users\\nikolaevata\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\obj\\",
+      "outputPath": "D:\\C#\\CsharpPlayground\\Katas\\TicTacToe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

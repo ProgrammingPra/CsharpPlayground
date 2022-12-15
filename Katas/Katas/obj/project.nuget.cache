@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sW2oskLNgXdWQnfzWum2vOucV5fF/N8mAIs9cC0jHehL4MO9RIF8aPClVERHLUGS3jTsZib593Db0qi7qKECMw==",
+  "dgSpecHash": "d2rfsojclM7CR3ibBnUevh0ToFdfj9i3e+wJzG6grlW7C8f+XMtTOISYsFmspEKIGhUEl4ALXZcQ87lhZ8dsAA==",
   "success": true,
-  "projectFilePath": "D:\\udemy\\katas\\csharp-katas\\Katas\\Katas\\Katas.csproj",
+  "projectFilePath": "D:\\C#\\CsharpPlayground\\Katas\\Katas\\Katas.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
