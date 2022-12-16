@@ -8,9 +8,9 @@ namespace TicTacToe
 {
     internal class InputValidator
     {
-        Game game;
+        private IGame game;
 
-        internal InputValidator(Game game) => this.game = game;
+        internal InputValidator(IGame game) => this.game = game;
 
         internal int GetInput(Player player)
         {

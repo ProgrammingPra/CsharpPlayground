@@ -8,8 +8,9 @@ namespace TicTacToe
         {
             //prepare
             int boardSize = 3;
-            Game game = new Game(boardSize);
+            IGame game = new Game(boardSize);
             InputValidator validator = new InputValidator(game);
+            ConsoleDisplay console = new ConsoleDisplay(game);
 
             Player player1 = new Player("X");
             Player player2 = new Player("O");      
@@ -17,21 +18,21 @@ namespace TicTacToe
 
             //start game
             Player currentPlayer = player1;
-            game.ShowInConsole();
+            console.DrawBoard();
 
             while (!game.Finished())
             {
                
-                int cell = validator.GetInput(currentPlayer);
+                int cellIndex = validator.GetInput(currentPlayer);
 
-                game.SetCellValue(cell, currentPlayer.Token);
+                game.SetCellValue(cellIndex, currentPlayer.Token);
 
-                game.ShowInConsole();
+                console.DrawBoard();
 
                 currentPlayer = currentPlayer == player1? player2 : player1;
             }
 
-            game.ShowWinner();
+            console.ShowWinner();
 
         }
     }
