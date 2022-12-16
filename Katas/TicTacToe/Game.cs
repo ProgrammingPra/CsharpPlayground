@@ -16,6 +16,7 @@ namespace TicTacToe
         private int numOfRows;
         private int numOfColumns;
 
+        internal int NumOfCells { get => numOfRows * numOfRows; }
 
 
         internal Game(int rowLength)
@@ -31,47 +32,117 @@ namespace TicTacToe
                 }
             }
 
-            numOfRows = board.GetLength(1);
-            numOfColumns = board.GetLength(0);
+            numOfRows = rowLength;
+            numOfColumns = numOfRows;
 
         }
 
         internal void ShowWinner()
         {
             if (string.IsNullOrWhiteSpace(winnerToken))
-            {
                 Console.WriteLine("No winner!");
-            }
-            Console.WriteLine($"And the winner is player {winnerToken}");
+            else
+                Console.WriteLine($"And the winner is player {winnerToken}");
         }
 
         internal bool Finished()
         {
-            return FullRow() || FullColumn() || FullDiagonal();
+            return FullRow() || FullColumn() || FullDiagonal() || NowhereToGo();
 
         }
 
+        private bool NowhereToGo()
+        {
+           return ColumnsBlocked() && RowsBlocked() && DiagsBlocked();
+        }
+
+        private bool DiagsBlocked()
+        {
+            return HasBlock(GetLeftToRightDiag()) && HasBlock(GetRightToLeftDiag());
+        }
+
+        private bool RowsBlocked()
+        {
+            string[][] rows = GetAllRows();
+
+            return rows.All(row => HasBlock(row));
+        }
+
+        private bool ColumnsBlocked()
+        {
+            string[][] columns = GetAllColumns();
+
+            return columns.All(col => HasBlock(col));
+        }
+
+        private bool HasBlock(string[] cells)
+        {
+            if (AllCellsFree(cells))
+                return false;
+
+            string usedCell = cells.First(cell => IsUsedCell(cell));
+            return cells.Any(cell => IsUsedCell(cell) && !usedCell.Equals(cell));
+        }
+
+        private bool IsUsedCell(string cell)
+        {
+            return !IsFreeCell(cell);
+
+        }
+
+        private bool IsFreeCell(string cell) {
+            return int.TryParse(cell, out _);
+
+
+        }
+
+        private bool AllCellsFree(string[] cells)
+        {
+            return cells.All(cell => IsFreeCell(cell));
+        }
+        
+
         private bool FullRow()
         {
-            for (int row = 0; row < numOfRows; row++)
+            var rows = GetAllRows();
+
+            return rows.Any(row => SameValues(row));
+        }
+
+        private string[][] GetAllRows()
+        {
+            string[][] rows = new string[numOfColumns][];
+
+            for (int row = 0; row < numOfColumns; row++)
             {
-                if (SameValues(GetRow(row)))
-                    return true;
+
+                rows[row] = GetRow(row);
+
             }
 
-            return false;
+            return rows;
+        }
+
+        private string[][] GetAllColumns()
+        {
+            string[][] columns = new string[numOfRows][];
+
+            for (int column = 0; column < numOfRows; column++)
+            {
+
+                columns[column] = GetColumn(column);
+                    
+            }
+
+            return columns;
         }
 
         private bool FullColumn()
         {
-            for (int column = 0; column < numOfColumns; column++)
-            {
+            var columns = GetAllColumns();
+           
 
-                if (SameValues(GetColumn(column)))
-                    return true;
-            }
-
-            return false;
+            return columns.Any(column => SameValues(column));
         }
 
         private bool FullDiagonal()
@@ -108,14 +179,14 @@ namespace TicTacToe
             {
                 leftToRight[row] = board[row, row];
             }
-            
+
             return leftToRight;
         }
 
         private string[] GetRightToLeftDiag()
         {
             string[] rightToLeft = new string[numOfRows];
-            for (int row = 0, col = numOfColumns - 1; row < numOfRows; row++, col--)
+            for (int row = 0, col = numOfRows - 1; row < numOfRows; row++, col--)
             {
                 rightToLeft[row] = board[row, col];
             }
@@ -129,7 +200,7 @@ namespace TicTacToe
 
             for (int row = 0; row < numOfRows; row++)
             {
-                colValues[row] = board[colIndex, row];
+                colValues[row] = board[row, colIndex];
             }
 
             return colValues;
@@ -137,9 +208,9 @@ namespace TicTacToe
 
         private string[] GetRow(int rowIndex)
         {
-            string[] rowValues = new string[numOfColumns];
+            string[] rowValues = new string[numOfRows];
 
-            for (int column = 0; column < numOfColumns; column++)
+            for (int column = 0; column < numOfRows; column++)
             {
                 rowValues[column] = board[rowIndex, column];
             }
@@ -153,26 +224,31 @@ namespace TicTacToe
             return value.ToString();
         }
 
-        private Position MapValueToPosition(int value, int rowLength)
+        private Position MapValueToPosition(int value)
         {
 
-            int row = value / rowLength;
-            if (value % rowLength == 0)
+            int row = value / numOfRows;
+            if (value % numOfRows == 0)
                 row--;
 
-            int column = value - 1 - row * rowLength;
+            int column = value - 1 - row * numOfRows;
 
             return new Position(row, column);
         }
 
-        internal void SetValue(int numberToReplace, string tokenOfPlayer)
+        internal string GetCellValue(int cellIndex)
         {
-            //TODO error handling
+            var cell = MapValueToPosition(cellIndex);
 
+            return board[cell.row, cell.column];
+        }
 
-            var boardPosition = MapValueToPosition(numberToReplace, board.GetLength(0));
+        internal void SetCellValue(int cellIndex, string tokenOfPlayer)
+        {
 
-            board[boardPosition.row, boardPosition.column] = tokenOfPlayer;
+            var cell = MapValueToPosition(cellIndex);
+
+            board[cell.row, cell.column] = tokenOfPlayer;
         }
 
 
