@@ -6,6 +6,7 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
+            //prepare
             int boardSize = 3;
             Game game = new Game(boardSize);
             InputValidator validator = new InputValidator(game);
@@ -21,10 +22,9 @@ namespace TicTacToe
             while (!game.Finished())
             {
                
+                int cell = validator.GetInput(currentPlayer);
 
-                int positionToSetToken = validator.GetInput(currentPlayer);
-
-                game.SetCellValue(positionToSetToken, currentPlayer.Token);
+                game.SetCellValue(cell, currentPlayer.Token);
 
                 game.ShowInConsole();
 
@@ -32,15 +32,6 @@ namespace TicTacToe
             }
 
             game.ShowWinner();
-
-           /* int position;
-            string input = Console.ReadLine();
-            while (!int.TryParse(input, out position))
-            {
-                Console.WriteLine("Invalid position. Try again!");
-                input = Console.ReadLine();
-            }*/
-
 
         }
     }
